@@ -1,5 +1,6 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { HotelAdmin } from './hotel_admins.models';
+import { Habitacion } from './habitaciones.models';
 
 @Entity()
 export class Hotel {
@@ -18,4 +19,7 @@ export class Hotel {
 
   @OneToMany(() => HotelAdmin, (hotelAdmin) => hotelAdmin.hotel)
   admins?: HotelAdmin[];
+
+  @OneToMany(() => Habitacion, (habitacion) => habitacion.hotel)
+  habitaciones?: Habitacion[];
 }

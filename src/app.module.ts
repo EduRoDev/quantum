@@ -5,6 +5,7 @@ import { HotelsModule } from './hotels/hotels.module';
 import { HotelAdminModule } from './hotel-admin/hotel-admin.module';
 
 
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
