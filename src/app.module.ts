@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { HotelsModule } from './hotels/hotels.module';
-import { AdminModule } from './admin/admin.module';
+import { HotelAdminModule } from './hotel-admin/hotel-admin.module';
 
 
 @Module({
@@ -19,7 +19,7 @@ import { AdminModule } from './admin/admin.module';
     }),
     UsersModule,
     HotelsModule,
-    AdminModule
+    HotelAdminModule
   ],
   controllers: [],
   providers: [],
