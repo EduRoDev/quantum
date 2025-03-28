@@ -14,11 +14,11 @@ export class Clientes {
     email: string;
     @Column()
     telefono: string;
-    @Column({enum: TipoDocumento})
-    tipo_documento: TipoDocumento;
+    @Column({type: 'enum', enum: TipoDocumento, default: TipoDocumento.CC})
+    tipo_documento: string;
     @Column()
     dni: string;
-    @Column()
+    @Column({type: 'date', default: () => 'CURRENT_DATE'})
     fecha_nacimiento: Date;
 
     @OneToMany(()=> Reserva, (reserva) => reserva.cliente)
