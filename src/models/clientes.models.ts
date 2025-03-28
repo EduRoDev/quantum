@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { TipoDocumento } from "./enum/tipo_documento.enum";
+import { Reserva } from "./reservas.models";
 
 @Entity('clientes')
 export class Clientes {
@@ -19,4 +20,7 @@ export class Clientes {
     dni: string;
     @Column()
     fecha_nacimiento: Date;
+
+    @OneToMany(()=> Reserva, (reserva) => reserva.cliente)
+    reservas: Reserva[];
 }
