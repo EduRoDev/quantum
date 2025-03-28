@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post } from '@nestjs/common';
 import { HotelAdminService } from './hotel-admin.service';
-import { CreateHotelAdminDto } from 'src/models/DTO/create-hotel-admin.dto';
+import { CreateHotelAdminDto } from 'src/hotel-admin/DTO/create-hotel-admin.dto';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Relaciones de admin')

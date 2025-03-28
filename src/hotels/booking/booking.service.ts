@@ -6,8 +6,8 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Clientes } from 'src/models/clientes.models';
-import { CheckAvailabilityDto } from 'src/models/DTO/check-availability.dto';
-import { CreateReservaDto } from 'src/models/DTO/create-reserva.dto';
+import { CheckAvailabilityDto } from 'src/hotels/booking/DTO/check-availability.dto';
+import { CreateReservaDto } from 'src/hotels/booking/DTO/create-reserva.dto';
 import { Habitacion } from 'src/models/habitaciones.models';
 import { Reserva } from 'src/models/reservas.models';
 import { Between, Not, Repository } from 'typeorm';

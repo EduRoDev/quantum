@@ -1,8 +1,8 @@
 import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Clientes } from 'src/models/clientes.models';
-import { CreateClienteDto } from 'src/models/DTO/create-client.dto';
-import { UpdateClientDto } from 'src/models/DTO/update-client.dto';
+import { CreateClienteDto } from 'src/users/clientes/DTO/create-client.dto';
+import { UpdateClientDto } from 'src/users/clientes/DTO/update-client.dto';
 import { Reserva } from 'src/models/reservas.models';
 
 import { Repository } from 'typeorm';

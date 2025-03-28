@@ -1,5 +1,5 @@
 import { IsDateString, IsEmail, IsEnum, IsString, IsNotEmpty } from 'class-validator';
-import { TipoDocumento } from '../../models/enum/tipo_documento.enum';
+import { TipoDocumento } from 'src//models/enum/tipo_documento.enum';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateClienteDto {

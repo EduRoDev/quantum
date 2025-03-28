@@ -8,8 +8,8 @@ import {
     ParseIntPipe,
   } from '@nestjs/common';
   import { BookingService } from './booking.service';
-  import { CreateReservaDto } from 'src/models/DTO/create-reserva.dto';
-  import { CheckAvailabilityDto } from 'src/models/DTO/check-availability.dto';
+  import { CreateReservaDto } from 'src/hotels/booking/DTO/create-reserva.dto';
+  import { CheckAvailabilityDto } from 'src/hotels/booking/DTO/check-availability.dto';
   import { ApiTags, ApiOperation, ApiResponse, ApiParam } from '@nestjs/swagger';
   import { Reserva } from 'src/models/reservas.models';
 import { Clientes } from 'src/models/clientes.models';

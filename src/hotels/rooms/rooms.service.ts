@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateRoomDto } from 'src/models/DTO/create-room.dto';
-import { UpdateRoomDto } from 'src/models/DTO/update-room.dto';
+import { CreateRoomDto } from './DTO/create-room.dto';
+import { UpdateRoomDto } from './DTO/update-room.dto';
 import { Habitacion } from 'src/models/habitaciones.models';
 import { Hotel } from 'src/models/hoteles.models';
 

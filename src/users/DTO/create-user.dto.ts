@@ -1,5 +1,5 @@
 import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
-import { TipoDocumento } from '../enum/tipo_documento.enum';
+import { TipoDocumento } from 'src/models/enum/tipo_documento.enum';
 export class CreateUserDto {
   @IsNotEmpty()
   @IsString()

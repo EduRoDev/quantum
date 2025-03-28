@@ -11,8 +11,8 @@ import {
 import { RoomsService } from './rooms.service';
 import { Habitacion } from 'src/models/habitaciones.models';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { CreateRoomDto } from 'src/models/DTO/create-room.dto';
-import { UpdateRoomDto } from 'src/models/DTO/update-room.dto';
+import { CreateRoomDto } from 'src/hotels/rooms/DTO/create-room.dto';
+import { UpdateRoomDto } from 'src/hotels/rooms/DTO/update-room.dto';
 
 @ApiTags('Habitaciones')
 @Controller('rooms')

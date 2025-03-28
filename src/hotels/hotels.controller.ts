@@ -10,8 +10,8 @@ import {
 import { HotelsService } from './hotels.service';
 import { Hotel } from 'src/models/hoteles.models';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UpdateHotelDto } from 'src/models/DTO/update-hotel.dto';
-import { CreateHotelDto } from 'src/models/DTO/create-hotel.dto';
+import { UpdateHotelDto } from 'src/hotels/DTO/update-hotel.dto';
+import { CreateHotelDto } from 'src/hotels/DTO/create-hotel.dto';
 
 @ApiTags('Hoteles')
 @Controller('hotels')

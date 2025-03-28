@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateHotelAdminDto } from 'src/models/DTO/create-hotel-admin.dto';
+import { CreateHotelAdminDto } from 'src/hotel-admin/DTO/create-hotel-admin.dto';
 import { HotelAdmin } from 'src/models/hotel_admins.models';
 import { Hotel } from 'src/models/hoteles.models';
 import { Usuario } from 'src/models/usuarios.models';
